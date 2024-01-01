@@ -1,0 +1,19 @@
+---
+layout: layouts/post.njk
+---
+
+<main>
+
+  <h1>Blog</h1>
+
+  <ul>
+    {% for article in collections.blogArticles %}
+      <li>
+        <span class="blog-article-list__date">{{ article.data.date | readableDate }}</span>
+        <a href="{{article.url}}">{{ article.data.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+
+</main>

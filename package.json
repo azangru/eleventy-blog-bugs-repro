@@ -1,0 +1,28 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --ignore-initial --incremental --serve",
+    "start-incremental": "eleventy --incremental --serve",
+    "deploy": "npm run build && gh-pages -d public",
+    "debug": "DEBUG=Eleventy* eleventy --incremental --serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-bundle": "1.0.5",
+    "gh-pages": "6.1.1",
+    "luxon": "3.4.4"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-plugin-rss": "1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
+    "eslint": "8.56.0",
+    "js-yaml": "4.1.0",
+    "markdown-it": "14.0.0"
+  }
+}

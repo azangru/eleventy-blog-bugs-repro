@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-home
+---
+
+{% html "styles" %}
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/css/home.css">
+{% endhtml %}
+
+{{ content | safe }}

@@ -1,0 +1,19 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "extends": "eslint:recommended",
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "rules": {
+    "semi": 1,
+    "eqeqeq": 1,
+    "no-unused-vars": ["error", { "vars": "all", "args": "after-used" }],
+    "no-console": 1
+  }
+}

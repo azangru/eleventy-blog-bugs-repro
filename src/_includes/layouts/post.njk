@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+---
+
+{% html "styles" %}
+<link rel="stylesheet" href="/assets/css/post.css">
+{% endhtml %}
+
+<main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+  <article>
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+  </article>
+</main>
+
+<footer></footer>
